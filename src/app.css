@@ -1,5 +1,7 @@
+/* Write your global styles here, in PostCSS syntax */
 @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@tailwind base;
 
 /* Write your global styles here, in PostCSS syntax */
 @tailwind base;
@@ -7,9 +9,13 @@
 @tailwind utilities;
 
 .material-icons {
-    font-family:"Material Icons";
+	font-family: 'Material Icons';
 }
 
-html{
-    font-family:"Poppins";
+html {
+	font-family: 'Poppins';
 }
+
+@tailwind components;
+
+@tailwind utilities;
