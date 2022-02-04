@@ -1,6 +1,6 @@
 <div class="border rounded-2xl w-80 text-left shadow-md m-2 inline-block overflow-hidden">    
     {#if source}
-    <img class="border-b" alt={title} src={source}/>
+        <img class="border-b object-cover h-[5em] object-center transition-all w-[100%] hover:h-[10em]" alt={title} src={source}/>
     {/if}
     <div class="py-4 p-4">
         <h3 class="text-lg underline decoration-wavy decoration-[#3282B8]">{title}</h3>
