@@ -48,7 +48,7 @@
         {
             title:"StreamKit",
             description:"Outil qui permet de créer des bannières",
-            link:"https://github.com/AquaBx/streamkit/"
+            github:"https://github.com/AquaBx/streamkit/"
         },
         {
             title:"Univ",
