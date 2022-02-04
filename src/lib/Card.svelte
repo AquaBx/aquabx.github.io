@@ -3,7 +3,7 @@
     <img class="border-b" alt={title} src={source}/>
     {/if}
     <div class="py-4 p-4">
-        <h3 class="text-lg decoration-wavy underline">{title}</h3>
+        <h3 class="text-lg underline decoration-wavy decoration-[#3282B8]">{title}</h3>
         <p class="py-2"><slot></slot></p>
         
         {#if link}
