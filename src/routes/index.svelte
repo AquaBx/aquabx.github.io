@@ -62,6 +62,12 @@
     ]
 </script>
 
+<svelte:head>
+    <title>Tom Chauvel</title>
+    <meta name="description" content="Site de Tom Chauvel / AquaBx, étudiant à l'ESIR à Rennes.">
+
+</svelte:head>
+
 <h1 class="font-bold text-4xl text-center py-8">Tom "Aqua" Chauvel</h1>
 <h2 class="font-bold text-2xl text-center p-b-4">🚧 En travaux 🚧</h2>
 
