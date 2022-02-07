@@ -1,0 +1,250 @@
+<head>
+
+<link href="style.css" rel="stylesheet">
+
+<meta charset="utf-8">
+<title>Python - Tom Chauvel</title>
+
+</head>
+<body>
+<a id="menu" href="javascript:dropdown('new')"></a>
+
+<ul id="new" class="hide">
+
+
+
+<li onclick="dropdown('0')">Home</li>
+<li onclick="dropdown('1')">Les types de valeurs</li>
+<li onclick="dropdown('2')">Les attributions de valeurs</li>
+<li onclick="dropdown('3')">Les comparateurs</li>
+<li onclick="dropdown('4')">Les fonctions</li>
+<li onclick="dropdown('5')">Les listes</li>
+<li onclick="dropdown('6')">Les boucles</li>
+
+</ul>
+
+<h1>Python</h1>
+
+<div id="0" class="show container">
+Si vous avez des questions, des remarques, si c’est mal expliqué, pas assez approfondi, si vous avez des notions que vous voulez que je rajoute, vous pouvez m’envoyer un message.
+<br>Tom 🙂
+
+<a href="javascript:set_back()">C'est où le menu?</a>
+</div>
+<div id="1" class="hide container">
+
+<h2>Les types de valeurs</h2>
+
+<pre>
+Un string : C’est une chaine de caractère
+on peut convertir une variable en string en écrivant : str(variable)
+
+Un integer : C’est un nombre entier
+on peut convertir une variable en integer en écrivant : int(variable)
+⚠ cette variable doit pouvoir être converti en entier
+ex : int(“5”) => 5 , int(“mot”) => erreur , int(“5.2”) => erreur , int(5.2) => 5
+
+Un float : C’est un nombre décimal
+on peut convertir une variable en float en écrivant : float(variable)
+⚠ cette variable doit pouvoir être converti en décimal
+ex : float(“5”) => 5.0 , float(“mot”) => erreur , float(“5.2”) => 5.2, float(5.2) => 5.2
+
+Un booléen : C’est une variable défini par True ou False
+
+Une liste : C’est une liste, elle a un ordre
+ex: [1,2,3,4] , [“mot”,13,1.2]
+
+
+Facultatif :
+Un dictionnaire: C’est une liste non ordonné
+ex: {“a”:”b”,”c”:”d”}
+
+Un tuple: C’est une liste non modifiable
+ex: (“a”,”b”) , (1,2)
+</pre>
+</div>
+
+<div id="2" class="hide container">
+
+<h2>Les attributions de valeurs</h2>
+
+Pour attribuer une valeur à une variable il suffit de mettre un =
+
+<pre class="code">
+a = 2
+b = "mot"
+c = True
+</pre>
+
+Facultatif :
+Pour les variables numériques, on peut incrémenter un nombre en faisant +=
+
+<pre class="code">
+a = a + 1
+#est similaire à
+a += 1
+</pre>
+
+</div>
+
+<div id="3" class="hide container">
+
+<h2>Les comparateurs</h2>
+
+
+Les comparateurs permettent, quand elles sont vérifiées, de générer un booléen (Rappel : Vrai ou Faux)
+
+<h4>Général:</h4>
+
+<pre class="code">
+a == b  # renvoie True si a et b sont identiques
+a != b  # renvoie True si a et b ne sont pas identiques
+</pre>
+
+<h4>Nombres:</h4>
+
+<pre class="code">
+a < b  # renvoie True si a est inférieur à b
+a >= b # renvoie True si a est supérieur ou égale à b
+</pre>
+
+<h4>Listes, tuples, dictionnaires:</h4>
+
+<pre class="code">
+a in b     # renvoie True si a est inclus dans b
+a not in b # renvoie True si a n’est pas inclus dans b
+</pre>
+
+On peut aussi combiner ses conditions avec or , and
+
+ex: a == b or a > b , a==b and c==d
+
+</div>
+
+
+<div id="4" class="hide container">
+<pre>
+<h2>Les fonctions</h2>
+Une fonction est un bout de programme qui ne se lance que lorsqu’on l’appelle.
+Elle peut être pratique à utiliser lorsqu’on effectue plusieurs fois la même suite d’opérations,
+on peut simplifier le code et le rendre plus lisible.
+
+Formule Générale : def nom_de_la_fonction (<"var1">,<"var2">,...)
+
+Remarque : les <"var1">,<"var2">, … sont des variables que l’on peut être amené à utiliser dans la fonction.
+Evidemment elles sont facultative si votre fonction n’a pas besoin de variables.
+
+Pour appeler la fonction on écrit :
+
+nom_de_la_fonction (<"var1">,<"var2">,...)
+
+Exemple :
+
+<pre class="code">
+def multiplication( chiffre1 , chiffre2 ):
+  return chiffre1 * chiffre2
+
+def retourne_yes():
+  return "yes"
+
+# return retourne juste la valeur, il ne l'affiche pas
+# pour l'afficher on fera : print( retourne_yes )
+# on peut également l'attribué à une variable : a = retourne_yes
+</pre>
+
+Quelques fonctions pratiques
+print(valeur) : affiche la valeur dans la console
+
+</pre>
+
+
+
+</div>
+
+
+
+
+<div id="5" class="hide container">
+  <h2>Les listes</h2>
+  <pre>
+Une liste est une suite de variables séparé par des virgules.
+Celle-ci peut être peut être utilisé pour avoir plein de variables en une seule.
+
+Illustration :
+<pre class="code">
+# il est plus judicieux de faire
+
+mots = ["il","fait","beau"]
+
+# que
+
+mot0 = "il"
+mot1 = "fait"
+mot2 = "beau"
+</pre>
+
+Les listes sont souvent utilisés pour faire des boucles.
+
+Remarque: Comme les listes sont ordonnées, on attribue un numéro d’ordre à chacune des valeurs de la liste en commençant à 0 : on appelle ce numéro l’ “index”
+
+Illustration : list  = [ “p” , “r” , “o” , “b” , “e” ]
+<img src="pasted image 0 (4).png">
+
+Comment les générées:
+<pre class="code">
+liste0 = [] # pour créer une liste vide
+
+liste1 = ["mot", 1, 1.0, True] # pour créer une liste avec des valeurs
+
+liste2 = range(10) # pour créer une liste de 0 à 9
+
+liste3 = range(1, 10, 2) # pour créer une liste de 1 à 9 de deux en deux => [1, 3, 5, 7, 9]
+</pre>
+
+Comment interagir avec:
+<pre class="code">
+liste0 = [7]
+liste0.append(5) # on ajoute 5 à la fin de la liste => liste0 = [7, 5]
+
+liste1 = [7, 5]
+print( liste1[0] ) #affiche la valeur au rang 0 de la liste1, ici c'est 7
+
+liste2 = [7, 5]
+liste2[1] = 3 # change la valeur au rang 1 de la liste2 par 3, ici c'est 5 qui est remplacé par 3 => liste2 = [7, 3]
+</pre>
+</pre>
+</div>
+
+
+
+
+<div id="6" class="hide container">
+
+<h2>Les boucles</h2>
+<pre>
+Il y a deux types de boucles:
+
+La boucle While: C’est une boucle qui s’exécute tant que le booléen est Vrai
+
+formule générale : while <"booléen">
+
+<pre class="code">
+while i < 10 :
+  print(i)
+  i+=1
+</pre>
+
+La boucle For: c’est une boucle qui énumère les objets d’une liste
+
+formule générale : for <"variable à définir"> in <"list">
+
+<pre class="code">
+liste = ["a","b","c","d"]
+for lettre in liste :
+  print(lettre)
+</pre>
+
+</pre>
+</div>
+</body>
+<script src="script.js"></script>
