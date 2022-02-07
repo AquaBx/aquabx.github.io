@@ -38,7 +38,7 @@
         {
             title:"Guide Python",
             description:"Si vous voulez apprendre certaines bases de Python",
-            link:"https://aquabx.ovh/python"
+            link:"https://aquabx.ovh/python/index.html"
         },
         {
             title:"Illusions d'optique",
