@@ -1,14 +1,14 @@
 {
-  "background_color": "#ffffff",
+  "background_color": "#0064C9",
   "description": "Site de Tom Chauvel / AquaBx, étudiant à l'ESIR à Rennes.",
   "dir": "ltr",
   "display": "standalone",
-  "name": "aquabx",
+  "name": "Tom Chauvel",
   "orientation": "any",
   "scope": "/",
-  "short_name": "aquabx",
+  "short_name": "Tom C.",
   "start_url": "/",
-  "theme_color": "#ffffff",
+  "theme_color": "#0064C9",
   "icons": [
     {
       "src": "windows11/SmallTile.scale-100.png",
