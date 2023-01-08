@@ -8,7 +8,7 @@ ENV NODE_ENV production
 ENV PORT 80
 
 RUN npm install
-RUN npm update -g
+# RUN npm update -g
 RUN npm install vite -g 
 
 EXPOSE 80
