@@ -1,9 +1,9 @@
 <script>
-    import Card from "$lib/Card.svelte"
-    import Social from "$lib/Social.svelte"
-    import Parser from "$lib/Parser.svelte"
-    import Container from "$lib/Container.svelte"
-
+    import Card from "../lib/Card.svelte"
+    import Social from "../lib/Social.svelte"
+    import Parser from "../lib/Parser.svelte"
+    import Container from "../lib/Container.svelte"
+    import "../app.css"
     const projets = [
         {
             title:"Tableau d'avancement",
