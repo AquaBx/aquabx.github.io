@@ -7,10 +7,10 @@
         <p class="py-2"><slot></slot></p>
         
         {#if link}
-            <a target="_blank" class="text-center text-[#3282B8] hover:text-[#EE6F57] transition-colors" href={link}>Visiter ↗</a>
+            <a rel="noreferrer" target="_blank" class="text-center text-[#3282B8] hover:text-[#EE6F57] transition-colors" href={link}>Visiter ↗</a>
         {/if}
         {#if github}
-            <a target="_blank" class="text-center text-[#3282B8] hover:text-[#EE6F57] transition-colors" href={github}>Github ↗</a>
+            <a rel="noreferrer" target="_blank" class="text-center text-[#3282B8] hover:text-[#EE6F57] transition-colors" href={github}>Github ↗</a>
         {/if}
     </div>
 </div>
