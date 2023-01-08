@@ -31,8 +31,9 @@ jobs:
           command: c
           cwd: "./"
           files: |
-            backend/
-            frontend/dist/
+            .svelte-kit
+            vite.config.js
+            package.json
             captain-definition
           outPath: deploy.tar
 
