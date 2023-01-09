@@ -1,15 +1,22 @@
-FROM node:19.4
+FROM node:lts-alpine
 
-WORKDIR /usr/src/app
+# install simple http server for serving static content
+RUN npm install -g vite
 
-COPY ./ /usr/src/app
+# make the 'app' folder the current working directory
+WORKDIR /app
 
-ENV NODE_ENV production
-ENV PORT 80
+# copy both 'package.json' and 'package-lock.json' (if available)
+COPY package*.json ./
 
+# install project dependencies
 RUN npm install
-# RUN npm update -g
-RUN npm install vite -g 
+
+# copy project files and folders to the current working directory (i.e. 'app' folder)
+COPY . .
+
+# build app for production with minification
+RUN npm run build
 
 EXPOSE 80
-CMD [ "npm", "start" ]
+CMD [ "vite", "preview", "--port", "80"]
