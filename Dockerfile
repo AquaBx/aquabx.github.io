@@ -19,4 +19,4 @@ COPY . .
 RUN npm run build
 
 EXPOSE 80
-CMD [ "vite", "preview", "--port", "80"]
+CMD [ "vite", "--host", "--port", "80"]
