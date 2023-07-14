@@ -1,23 +1,49 @@
-<div class="border rounded-2xl w-80 text-left shadow-md m-2 inline-block overflow-hidden">    
-    {#if source}
-        <img class="border-b object-cover h-[5em] object-center transition-all w-[100%] hover:h-[10em]" alt={title} src={source}/>
-    {/if}
-    <div class="py-4 p-4">
-        <h3 class="text-lg underline decoration-wavy decoration-[#3282B8]">{title}</h3>
-        <p class="py-2"><slot></slot></p>
-        
-        {#if link}
-            <a rel="noreferrer" target="_blank" class="text-center text-[#3282B8] hover:text-[#EE6F57] transition-colors" href={link}>Visiter ↗</a>
-        {/if}
-        {#if github}
-            <a rel="noreferrer" target="_blank" class="text-center text-[#3282B8] hover:text-[#EE6F57] transition-colors" href={github}>Github ↗</a>
-        {/if}
-    </div>
-</div>
-
 <script>
     export let title;
-    export let source;
-    export let link;
-    export let github;
+    export let description;
+    export let tags;
 </script>
+
+
+<a href={"./blog/"+title} class="card">
+
+    <h2>{title}</h2>
+    <p>{description}</p>
+
+
+    <div class="taglist">
+        {#each tags as tag}
+            <span class="tag">{tag}</span>
+        {/each}
+    </div>
+
+</a>
+
+
+<style>
+
+    .taglist {
+        display: flex;
+        gap: 1em;
+    }
+
+    .tag {
+        background-color: var(--blue);
+        padding: 0 1em;
+        border-radius:  1em ;
+    }
+
+    .card {
+        all:unset;
+        cursor: pointer;
+        background-color: var(--compl);
+        padding:1em;
+        border-radius:  1em ;
+    }
+
+    .card h2 {
+        margin:0;
+    }
+
+
+</style>
