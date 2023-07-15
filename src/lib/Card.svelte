@@ -2,10 +2,11 @@
     export let title;
     export let description;
     export let tags;
+    export let slug;
 </script>
 
 
-<a href={"./blog/"+title} class="card">
+<a href={"./blog/"+slug} class="card">
 
     <h2>{title}</h2>
     <p>{description}</p>
