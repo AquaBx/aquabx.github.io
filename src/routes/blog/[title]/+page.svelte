@@ -1,32 +1,21 @@
 <script>
-    import { onMount } from "svelte";
-    import md from 'markdown-it';
-
-    import { page } from "$app/stores";
-    const { title } = $page.params;
-
-    const md_render = md({
-        html: true
-    })
-
-    let content = ""
-
-    onMount( async ()=>{
-
-        let req = await fetch("/articles/" + title + ".md")
-        if (req.status !== 200){
-            content = "Le post n'est pas créé ou n'existe pas :("
-        }
-        else{
-            let raw = await req.text();
-            content = md_render.render(raw);
-        }
-        
-    })
-
+    export let data
 </script>
 
+<article>
+    <hgroup>
+        <h1>{data.meta.title}</h1>
+        <p>{data.meta.description}</p>
+    </hgroup>
 
-<main class="md">
-    {@html content }
-</main>
+
+    <div class="tags">
+        {#each data.meta.tags as tag }
+            <span>{tag}</span>
+        {/each}
+    </div>
+
+    <main class="md">
+        <svelte:component this={data.content}></svelte:component>
+    </main>
+</article>
