@@ -86,12 +86,17 @@ html,body{
 }
 
 a:link,a:visited {
+	all:unset;
+	cursor: pointer;
+}
+
+main.md > a:link {
 	color: var(--blue);
 	cursor: pointer;
 	text-decoration: unset;
 }
 
-a:hover {
+main.md > a:hover {
 	color: var(--red);
 }
 

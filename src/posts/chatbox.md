@@ -1,9 +1,8 @@
 ---
 
 title : Chatbox
-description : 
-source : https://aquabx.github.io/chatbox/main.webp
-link : https://aquabx.github.io/chatbox/
+description : ""
+codepen : https://codepen.io/AquaBx/pen/vYJvvqw
 tags: [dev]
 date: '2023-07-15'
 

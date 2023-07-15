@@ -15,6 +15,7 @@
 <style>
 
     nav {
+        z-index: 50;
         display: grid;
         grid-template-columns: 5em 10em 1fr;
         height: 5em;
