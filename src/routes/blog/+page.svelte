@@ -7,7 +7,7 @@
 <main>
     <div class="cardcontainer">
         {#each data.posts as post} 
-            <Card title={post.title} slug={post.slug} description={post.description} tags={post.tags}></Card>
+            <Card post={post}></Card>
         {/each}
     </div>
 

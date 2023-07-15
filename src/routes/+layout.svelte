@@ -38,7 +38,7 @@
     #content {
         overflow:auto;
         width:clamp(100px,calc(100% - 40px),19cm);
-        margin: 0 25%;
+        margin: auto;
         min-height:calc(100vh - 12.5em);
     }
 

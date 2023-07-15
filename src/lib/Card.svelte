@@ -1,38 +1,20 @@
 <script>
-    export let title;
-    export let description;
-    export let tags;
-    export let slug;
+    export let post;
+    import Tags from "./Tags.svelte";
 </script>
 
 
-<a href={"./blog/"+slug} class="card">
+<a href={"./blog/"+post.slug} class="card">
 
-    <h2>{title}</h2>
-    <p>{description}</p>
+    <h2>{post.title}</h2>
+    <p>{post.description}</p>
 
-
-    <div class="taglist">
-        {#each tags as tag}
-            <span class="tag">{tag}</span>
-        {/each}
-    </div>
+    <Tags metadata={post}></Tags>
 
 </a>
 
 
 <style>
-
-    .taglist {
-        display: flex;
-        gap: 1em;
-    }
-
-    .tag {
-        background-color: var(--blue);
-        padding: 0 1em;
-        border-radius:  1em ;
-    }
 
     .card {
         all:unset;

@@ -1,9 +1,8 @@
 ---
 
 title : Social Network Post
-description : 
-source : https://aquabx.github.io/social-network-post/main.webp
-link : https://aquabx.github.io/social-network-post/
+description : ""
+codepen : https://codepen.io/AquaBx/pen/WNZMWbw
 tags: [dev]
 date: '2023-07-15'
 
