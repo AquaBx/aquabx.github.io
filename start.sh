@@ -1,3 +1,4 @@
 npm install -g vite
 npm install
-vite --host --port 80
+vite build
+vite preview --port 80 --host
