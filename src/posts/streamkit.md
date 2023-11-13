@@ -1,9 +1,9 @@
 ---
 
 title : StreamKit
-description : Outil qui permet de créer des bannières
+description : Outil qui permettait de créer des bannières pour ses réseaux sociaux
 github : https://github.com/AquaBx/streamkit/
-tags: [dev]
-date: '2023-07-15'
+tags: [Javascript]
+date: '2020-07-30'
 
 ---

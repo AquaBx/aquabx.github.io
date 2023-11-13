@@ -4,24 +4,35 @@
 </script>
 
 
-<a href={"./blog/"+post.slug} class="card">
+<div class="card">
 
     <h2>{post.title}</h2>
     <p>{post.description}</p>
+    <!-- <p>{post.date}</p> -->
 
     <Tags metadata={post}></Tags>
 
-</a>
+</div>
 
 
 <style>
 
     .card {
         all:unset;
-        cursor: pointer;
-        background-color: var(--compl);
-        padding:1em;
-        border-radius:  1em ;
+        user-select: none;
+        
+        padding:16px;
+        display: inline-block;
+        width: calc(100% - 16px - 2em);
+        margin:8px;
+
+        background: rgba(var(--compl2), 0.6);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(6.7px);
+        -webkit-backdrop-filter: blur(6.7px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+
     }
 
     .card h2 {

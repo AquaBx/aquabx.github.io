@@ -10,8 +10,10 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@splinetool/runtime": "^0.9.496",
 		"@sveltejs/adapter-auto": "^1.0.3",
 		"@sveltejs/kit": "^1.20.5",
+		"css-doodle": "^0.37.3",
 		"mdsvex": "^0.11.0",
 		"postcss": "^8.4.31",
 		"serve": "^14.2.0",

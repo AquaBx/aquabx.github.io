@@ -1,10 +1,10 @@
 ---
 
 title : Météo
-description : Une super app météo
-source : https://aquabx.github.io/meteo/main.webp
+description : Une super app météo, bof en vrai, mais c'était marrant à faire
+github : https://github.com/AquaBx/meteo/
 link : https://aquabx.github.io/meteo/
-tags : [ dev ]
-date: '2023-07-15'
+tags : [ "Javascript" ]
+date: '2020-03-14'
 
 ---
