@@ -37,6 +37,8 @@
     .taglist {
         display: flex;
         gap: 1em;
+        flex-wrap: wrap;
+
     }
 
     .tag {

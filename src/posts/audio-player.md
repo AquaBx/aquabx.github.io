@@ -1,9 +1,9 @@
 ---
 
 title : Audio Player
-description : ""
+description : "Un petit challenge à faire, qui a donné quelque chose de plûtot potable"
 codepen: https://codepen.io/AquaBx/pen/NWgKKBK
-tags: [dev]
-date: '2023-07-15'
+tags: [Javascript]
+date: '2019-07-20'
 
 ---

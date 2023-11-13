@@ -3,6 +3,13 @@
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 
 
+
+
+@font-face {
+	font-family: 'MonaspaceNeonVarVF';
+	src: url('MonaspaceNeonVarVF.ttf');
+  }
+
 .material-icons {
 	font-family: 'Material Icons';
 }
@@ -27,6 +34,7 @@ html {
 	:root	{
 		--background:rgb(255, 255, 255);
         --compl:rgb(245,245,255);
+        --compl2:245,245,255;
 		--text:#000000;
 		--text-reverse:#ffffff;
 		--shadow:rgba(0, 0, 0, 0.1);
@@ -38,6 +46,7 @@ html {
     :root	{
         --background:rgb(25, 25, 35);
         --compl:rgb(20, 20, 30);
+        --compl2:20, 20, 30;
 		--text:#ffffff;
 		--text-reverse:#000000;
 		--shadow:rgba(0, 0, 0, 0.3);
@@ -66,7 +75,7 @@ html {
 		/* overflow: hidden !important; */
 	}
 }
-
+/* 
 ::-webkit-scrollbar{
 	width:12px;
 	height:12px;
@@ -77,12 +86,14 @@ html {
 	border:4px solid transparent;
 	background-clip:content-box;
 	background-color: var(--text);
-}
+} */
 
 html,body{
     all:unset;
 	font-family: Poppins;
     color:var(--text);
+	overflow-x:hidden;
+
 }
 
 a:link,a:visited {
@@ -211,6 +222,10 @@ main.md blockquote {
 	border-radius: 0 0.75em 0.75em 0;
 	color:var(--yellow) !important;
 	background-color: var(--back-quote);
+}
+
+p {
+	width: clamp(0px,100%,800px);
 }
 
 red {
