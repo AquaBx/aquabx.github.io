@@ -22,7 +22,7 @@
 				{#if photo.media_url != undefined } 
 					{#if photo.media_url.includes(".jpg") }
 
-						<img src={photo.media_url}>
+						<img src={photo.media_url} loading="lazy">
 
 					{/if}
 				{/if}
