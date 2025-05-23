@@ -2,7 +2,6 @@
 	import Card from "$lib/components/Card.svelte";
 	let { data } = $props();
 	let { companies, contests, studies, projects } = data;
-	console.log(data)
 </script>
 
 

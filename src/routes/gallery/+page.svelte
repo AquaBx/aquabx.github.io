@@ -1,23 +1,17 @@
 <script lang="ts">
-	import Masonry from "svelte-bricks";
+	import { Gallery } from "flowbite-svelte";
 	let { data } = $props();
 	let { items } = data;
 
-	let [minColWidth, maxColWidth, gap] = [200, 800, 20];
-	let width = $state(0),
-		height = $state(0);
+	let l = items.length;
 </script>
 
-<Masonry
-	{items}
-	{minColWidth}
-	{maxColWidth}
-	{gap}
-	class="p-4"
-	bind:masonryWidth={width}
-	bind:masonryHeight={height}
->
-	{#snippet children({ item })}
-		<img class="rounded-xl" src={item} />
-	{/snippet}
-</Masonry>
+<div class="flex gap-2">
+	{#each [0, 1, 2, 3] as i}
+		<div class="flex flex-col flex-1 gap-2">
+			{#each items.slice(Math.floor((i * l) / 4), Math.floor(((i + 1) * l) / 4)) as item}
+				<img class="rounded-xl" src={item} />
+			{/each}
+		</div>
+	{/each}
+</div>

@@ -1,5 +1,4 @@
 import type { Post } from '$lib/types'
-
 async function getAll() {
     let posts = []
 

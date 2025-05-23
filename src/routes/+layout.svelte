@@ -11,14 +11,14 @@
 <svelte:head>
 	<title>{SITE_TITLE}</title>
 	<meta name="description" content={SITE_DESCRIPTION} />
+
+	<meta property="og:type" content="website" />
 	<meta property="og_site_name" content={host} />
 	<meta property="og:url" content={url} />
-	<meta property="og:type" content="website" />
 	<meta property="og:title" content={SITE_TITLE} />
 	<meta property="og:description" content={SITE_DESCRIPTION} />
 
-	<meta name="twitter:card" content="summary_large_image" />
-	<meta property="twitter:domain" content="“example.com" />
+	<meta property="twitter:domain" content={host} />
 	<meta property="twitter:url" content={url} />
 	<meta name="twitter:title" content={SITE_TITLE} />
 	<meta name="twitter:description" content={SITE_DESCRIPTION} />
