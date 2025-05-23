@@ -5,11 +5,12 @@ async function getAll() {
     const paths = import.meta.glob(`/static/content/photos/*`, {
         eager: true,
         query: {
+            w: "1280;800;400",
             enhanced: true
         }
     })
 
-    return Object.entries(paths).map(i=>i[1].default)
+    return Object.entries(paths).map(i => i[1].default)
 }
 
 export async function load() {
