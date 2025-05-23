@@ -7,8 +7,8 @@ async function getAll() {
 
     for (const path in paths) {
         const file = paths[path]
-        const post = await import(path)
-        posts.push(post.default.replace("/static",""))
+        const link = path.split("/").slice(-3).join("/")
+        posts.push(link)
     }
 
     return posts
