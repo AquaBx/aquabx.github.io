@@ -24,7 +24,7 @@
 	<meta name="twitter:description" content={SITE_DESCRIPTION} />
 </svelte:head>
 
-<main class="max-w-2xl m-auto w-full flex flex-col gap-12 py-16 px-4">
+<main class="m-auto w-full flex flex-col gap-12 py-16 px-4 max-w-6xl">
 	<nav class="flex gap-2 flex-col">
 		<h1 class="text-5xl font-semibold text-center">Tom Chauvel</h1>
 		<div class="flex items-center justify-center gap-4">
