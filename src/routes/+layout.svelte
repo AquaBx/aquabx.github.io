@@ -29,7 +29,7 @@
 		<h1 class="text-5xl font-semibold text-center">Tom Chauvel</h1>
 		<div class="flex items-center justify-center gap-4">
 			<a href="/">Home</a>
-			<a href="/galery">Gallery</a>
+			<a href="/gallery">Gallery</a>
 		</div>
 	</nav>
 
