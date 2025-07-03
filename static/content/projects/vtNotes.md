@@ -1,9 +1,12 @@
 ---
-name: "vtNotes"
+name: 
+      en: ""
+      fr: "vtNotes"
 repository: "https://github.com/aquabx/vtNotes"
-startDate: 'Jan 24 2023'
+dates:
+    - start: "Jan 24 2023"
 tags:
-- "TypeScript"
-- "Svelte"
-- "Tauri"
+    - "TypeScript"
+    - "Svelte"
+    - "Tauri"
 ---

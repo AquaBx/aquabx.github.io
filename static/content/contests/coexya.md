@@ -1,5 +1,8 @@
 ---
-name: "Coexya : Challenge Technique"
-startDate: 'Mar 1 2024'
-endDate: 'Mar 1 2024'
+name: 
+      en: ""
+      fr: "Coexya : Challenge Technique"
+dates:
+    - start: "Mar 1 2024"
+      end: "Mar 1 2024"
 ---

@@ -1,12 +1,17 @@
 export type Categories = 'sveltekit' | 'svelte'
 
+export type LocalizedString = {
+	[lang: string]: string
+}
+
 export type Post = {
 	repository?: string
 	homepage?: string
-	name: string
+	description?: LocalizedString
+	location?: string
+	name: LocalizedString
 	tags?: string[]
-	startDate: Date
-	endDate?: Date
+	dates: { start?: Date, end?: Date }[]
 	slug: string
 	type: string
 }

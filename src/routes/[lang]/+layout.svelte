@@ -1,11 +1,11 @@
 <script lang="ts">
 	import Footer from "$lib/components/Footer.svelte";
-	import "../app.css";
-	import { SITE_DESCRIPTION, SITE_TITLE } from "../consts";
+	import "../../app.css";
+	import { SITE_DESCRIPTION, SITE_TITLE } from "../../consts";
 
 	let { children, data } = $props();
 
-	let { host, url } = data;
+	let { host, url, lang } = data;
 </script>
 
 <svelte:head>
@@ -24,12 +24,14 @@
 	<meta name="twitter:description" content={SITE_DESCRIPTION} />
 </svelte:head>
 
-<main class="m-auto w-full flex flex-col gap-12 py-16 px-4 max-w-6xl">
-	<nav class="flex gap-2 flex-col">
+<main
+	class="m-auto w-full flex flex-col gap-12 py-16 px-4 max-w-6xl print:p-0"
+>
+	<nav class="flex gap-2 flex-col print:hidden">
 		<h1 class="text-5xl font-semibold text-center">Tom Chauvel</h1>
 		<div class="flex items-center justify-center gap-4">
-			<a href="/">Home</a>
-			<a href="/gallery">Gallery</a>
+			<a href="{lang}/">Home</a>
+			<a href="{lang}/gallery">Gallery</a>
 		</div>
 	</nav>
 

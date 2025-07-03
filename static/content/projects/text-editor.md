@@ -1,9 +1,12 @@
 ---
-name: "text-editor"
+name: 
+      en: ""
+      fr: "text-editor"
 repository: https://github.com/AquaBx/text-editor
-startDate: 'Oct 7 2024'
-endDate: 'Oct 28 2024'
+dates:
+    - start: "Oct 7 2024"
+      end: "Oct 28 2024"
 tags:
-- "C++"
-- "SDL"
+    - "C++"
+    - "SDL"
 ---

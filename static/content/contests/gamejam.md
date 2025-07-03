@@ -1,5 +1,8 @@
 ---
-name: "ESIR : GameJam"
-startDate: 'Apr 2024'
-endDate: 'Apr 2024'
+name: 
+      en: ""
+      fr: "ESIR : GameJam"
+dates:
+    - start: "Apr 2024"
+      end: "Apr 2024"
 ---

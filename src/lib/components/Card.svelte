@@ -43,6 +43,8 @@
 		{/if}
 	</div>
 
+	<p>{@html post.description}</p>
+
 	<p class="text-xs m-0 mt-4 text-gray-900">
 		{#if post.startDate && post.endDate}
 			From <FormattedDate date={post.startDate} /> to <FormattedDate

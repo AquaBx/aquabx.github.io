@@ -1,6 +1,9 @@
 ---
-name: "Lycée Jean Paul II"
-location: "Saint Grégoire, France"
-startDate: 'Sep 1 2018'
-endDate: 'Jul 31 2021'
+name:
+    en: ""
+    fr: "Lycée Jean Paul II"
+location: "35760 Saint Grégoire, France"
+dates:
+    - start: "Sep 1 2018"
+      end: "Jul 31 2021"
 ---

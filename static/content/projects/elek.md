@@ -1,7 +1,10 @@
 ---
-name: "elek"
+name: 
+      en: ""
+      fr: "elek"
 repository: "https://github.com/aquabx/elek"
-startDate: 'Apr 21 2023'
+dates:
+    - start: "Apr 21 2023"
 tags:
-- "JavaScript"
+    - "JavaScript"
 ---

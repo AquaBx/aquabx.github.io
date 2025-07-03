@@ -1,5 +1,8 @@
 ---
-name: "SopraSteria : Break the Code"
-startDate: 'Nov 28 2024'
-endDate: 'Nov 28 2024'
+name: 
+      en: ""
+      fr: "SopraSteria : Break the Code"
+dates:
+    - start: "Nov 28 2024"
+      end: "Nov 28 2024"
 ---
