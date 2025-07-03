@@ -30,8 +30,8 @@
 	<nav class="flex gap-2 flex-col print:hidden">
 		<h1 class="text-5xl font-semibold text-center">Tom Chauvel</h1>
 		<div class="flex items-center justify-center gap-4">
-			<a href="{lang}/">Home</a>
-			<a href="{lang}/gallery">Gallery</a>
+			<a href="/{lang}/">Home</a>
+			<a href="/{lang}/gallery">Gallery</a>
 		</div>
 	</nav>
 
